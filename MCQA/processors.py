@@ -6,7 +6,7 @@ import re
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from MCQA import Questionnaire
+from MCQA.data import Questionnaire
 
 
 class BasicProcessor:

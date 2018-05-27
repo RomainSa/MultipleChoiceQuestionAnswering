@@ -1,7 +1,7 @@
 import unittest
 
-from MCQA import Questionnaire, Question
-import processors
+from MCQA.data import Questionnaire, Question
+from MCQA import processors
 
 
 class TestProcessors(unittest.TestCase):

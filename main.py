@@ -1,6 +1,6 @@
-from MCQA import Questionnaire
-from processors import BasicProcessor, TfIdfProcessor
-from solvers import GoogleSolver
+from MCQA.data import Questionnaire
+from MCQA.processors import BasicProcessor, TfIdfProcessor
+from MCQA.solvers import GoogleSolver
 
 
 # load our data file as a Questionnaire
@@ -20,4 +20,7 @@ print(question.statement)
 # solver corresponding Questionnaire and print precision
 solver = GoogleSolver(question)
 answer = solver.answer()
-answer == question.correct_answer
+if answer == question.correct_answer:
+    print('This is the correct answer')
+else:
+    print('This is NOT the correct answer')
